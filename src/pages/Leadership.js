@@ -26,10 +26,10 @@ export default function Leadership() {
             <div>
               <div className="card" style={{ borderTop: '3px solid var(--gold)', marginBottom: '1.25rem' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
-                  <span className="badge">Founder & Vice President</span>
+                  <span className="badge">Mahindra University</span>
                   <span style={{ fontSize: '0.8rem', color: 'var(--text-light)' }}>2024 – Present</span>
                 </div>
-                <h3 className="card-title">Mahindra University</h3>
+                <h3 className="card-title">Founder & Vice President</h3>
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', margin: '0.5rem 0' }}>
                   Cognitia is an interdisciplinary technology and research club I founded at Mahindra University.
                   It bridges computer science, cognitive science, and the social sciences through workshops,
@@ -71,10 +71,10 @@ export default function Leadership() {
             <div>
               <div className="card">
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
-                  <span className="badge">Board of Directors</span>
+                  <span className="badge">International NGO</span>
                   <span style={{ fontSize: '0.8rem', color: 'var(--text-light)' }}>2024 – Present</span>
                 </div>
-                <h3 className="card-title">International NGO</h3>
+                <h3 className="card-title">Board of Directors</h3>
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', margin: '0.5rem 0' }}>
                   Visionari is an international NGO focused on English education and life-skills training
                   for rural communities and women. As a Board of Directors member, I contribute to strategic
