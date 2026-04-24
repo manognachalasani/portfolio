@@ -18,7 +18,7 @@ function Navbar() {
         <li><NavLink to="/" end>Home</NavLink></li>
         <li><NavLink to="/projects">Projects</NavLink></li>
         <li><NavLink to="/leadership">Leadership</NavLink></li>
-        <li><NavLink to="/research">Research</NavLink></li>
+        <li><NavLink to="/research">Academics</NavLink></li>
         <li><NavLink to="/community">Community</NavLink></li>
         <li><NavLink to="/hobbies">Hobbies</NavLink></li>
       </ul>
