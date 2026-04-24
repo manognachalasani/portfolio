@@ -4,18 +4,16 @@ import profilePhoto from '../assets/profile.jpeg';
 
 const skills = {
   'Programming': ['Java', 'Python', 'C'],
-  'Web / Full Stack': ['React', 'JavaScript', 'TypeScript', 'HTML', 'CSS', 'Node.js', 'FastAPI'],
+  'Web / Full Stack': ['React', 'JavaScript', 'TypeScript', 'HTML', 'CSS', 'Node.js', 'Express.js', 'FastAPI','REST APIs'],
   'Cloud & DevOps': ['Azure Functions', 'Azure Blob Storage', 'Azure VMs', 'AWS (Basics)', 'Docker'],
   'Cybersecurity': ['JWT Auth', 'Cryptography', 'SOC Fundamentals', 'Ethical Hacking', 'Wireshark'],
   'Databases': ['SQL', 'PostgreSQL', 'MongoDB'],
-  'Tools': ['Git', 'REST APIs', 'Linux', 'Postman', 'JIRA', 'draw.io'],
+  'Tools': ['Git', 'Linux', 'Postman', 'JIRA', 'draw.io', 'Morgan', 'Helmet.js'],
 };
 
 const stats = [
   { n: '8.5', label: 'CGPA / 10' },
   { n: '3×', label: 'Merit Scholarship' },
-  { n: '500+', label: 'Students Impacted' },
-  { n: '30+', label: 'Anthologies' },
 ];
 
 export default function Home() {
@@ -35,9 +33,8 @@ export default function Home() {
                 <em style={{ color: 'var(--gold-light)', fontStyle: 'italic' }}>Chalasani</em>
               </h1>
               <p style={{ color: 'rgba(255,255,255,0.72)', maxWidth: 560, fontSize: '1.05rem', marginBottom: '2rem', lineHeight: 1.75 }}>
-                CS undergraduate with a passion for cloud systems, cybersecurity, and full-stack development.
-                Builder, researcher, poet, and club founder — seeking a Summer Internship in Full-Stack Java
-                or Cybersecurity.
+                CS undergraduate with a passion for cybersecurity, AI/ML, cloud systems and full-stack development.
+                I am a Builder, researcher, poet, and club founder.
               </p>
               <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
                 <Link to="/projects" className="btn btn-gold">View Projects ↗</Link>
@@ -91,12 +88,11 @@ export default function Home() {
           <div className="grid-2" style={{ gap: '2.5rem', alignItems: 'start' }}>
             <div>
               <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>
-                I'm a second-year B.S. Computer Science student at Mahindra University, Hyderabad,
-                maintaining an 8.5 CGPA and holding the Award of Merit Scholarship for three consecutive years.
+                I'm a third-year B.S. Computer Science student at Mahindra University, Hyderabad.
               </p>
               <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>
-                My technical interests span cloud-native systems, cybersecurity, and machine learning —
-                but I'm equally at home writing poetry, debating policy, and exploring behavioral psychology.
+                My technical interests span across cybersecurity, AI/ML, and cloud-native systems 
+                but I'm equally adept in writing poetry, debating, and exploring behavioral psychology.
                 I believe the best engineers are the ones who bring a humanistic lens to their work.
               </p>
               <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem' }}>
@@ -109,8 +105,8 @@ export default function Home() {
                   ['📧', 'manognachalasani@gmail.com'],
                   ['📧', 'se23ucse046@mahindrauniversity.edu.in'],
                   ['📞', '+91 9100982104'],
-                  ['🔗', 'linkedin.com/in/manogna-ch'],
-                  ['🐙', 'github.com/manognachalasani'],
+                  [ 'linkedin.com/in/manogna-ch'],
+                  ['github.com/manognachalasani'],
                 ].map(([icon, val]) => (
                   <div key={val} style={{ display: 'flex', gap: '0.75rem', fontSize: '0.9rem', color: 'var(--text-muted)' }}>
                     <span>{icon}</span><span>{val}</span>
@@ -150,7 +146,7 @@ export default function Home() {
           <hr className="section-rule" />
           <div className="grid-3">
             {[
-              { title: 'Cloud Security', desc: 'Serverless architectures, JWT auth, secure APIs, and Azure-native deployments.', icon: '☁️' },
+              { title: 'Cloud Security', desc: 'Serverless architectures, JWT auth, secure APIs, and Azure-native deployments.'},
               { title: 'Cybersecurity', desc: 'Password analysis, credential attacks, SOC fundamentals, ethical hacking, and cryptography.', icon: '🔐' },
               { title: 'Machine Learning', desc: 'Predictive modelling, regression, ensemble methods, and behavioral AI applications.', icon: '🧠' },
               { title: 'Behavioral Computing', desc: 'Cognitive load theory, human-computer interaction, and tech adoption psychology.', icon: '🧩' },
@@ -167,24 +163,56 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Technical Skills ── */}
-      <section style={{ padding: '4rem 0' }}>
-        <div className="container">
-          <p className="section-eyebrow">Technical Skills</p>
-          <h2 className="section-title">My <em>toolkit</em></h2>
-          <hr className="section-rule" />
-          <div className="grid-2">
-            {Object.entries(skills).map(([cat, items]) => (
-              <div key={cat}>
-                <p style={{ fontSize: '0.8rem', fontWeight: 500, letter_spacing: '0.08em', textTransform: 'uppercase', color: 'var(--navy)', marginBottom: '0.6rem' }}>{cat}</p>
-                <div className="tags">
-                  {items.map(s => <span className="tag" key={s}>{s}</span>)}
-                </div>
-              </div>
-            ))}
-          </div>
+      {/* ── Research Interests ── */}
+<section style={{ background: 'var(--cream-dark)', padding: '4rem 0' }}>
+  <div className="container">
+    <p className="section-eyebrow">Research Interests</p>
+    <h2 className="section-title">What I <em>explore</em></h2>
+    <hr className="section-rule" />
+    <div className="grid-3">
+      {[
+        { 
+          title: 'Insider Threat Detection', 
+          desc: 'Anomaly detection using Isolation Forest & Autoencoders, risk scoring models, and real-time SOC alerting systems.'
+        },
+        { 
+          title: 'Cybersecurity & Cryptography', 
+          desc: 'Password security analysis, credential stuffing simulation, hash-cracking attacks, and adversarial entropy analysis.'
+        },
+        { 
+          title: 'Machine Learning', 
+          desc: 'Employee attrition prediction, salary forecasting, ridge regression, and ensemble methods (RF, SVM, Logistic Regression).'
+        },
+        { 
+          title: 'Cloud-Native & Serverless', 
+          desc: 'Azure Functions, serverless architecture, JWT auth, secure APIs, and scalable cloud storage with Azure Blob.' 
+        },
+        { 
+          title: 'Information Diffusion', 
+          desc: 'Simulating real vs fake news propagation, intervention strategies, and analyzing misinformation spread dynamics.'
+        },
+        { 
+          title: 'Full-Stack & Backend Systems', 
+          desc: 'Express.js + TypeScript, JWT auth, role-based access, real-time availability, and automated email workflows.'
+        },
+        { 
+          title: 'AI & LLM Applications', 
+          desc: 'Few-shot prompt engineering, text reconstruction with Google Gemini, and contextual web search integration.'
+        },
+        { 
+          title: 'Behavioral Computing', 
+          desc: 'Cognitive load theory, HCI, tech adoption psychology, and role-based access deviation analysis.'
+        },
+      ].map(r => (
+        <div className="card" key={r.title}>
+          <div style={{ fontSize: '1.75rem', marginBottom: '0.6rem' }}>{r.icon}</div>
+          <div className="card-title">{r.title}</div>
+          <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)' }}>{r.desc}</p>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* ── Languages ── */}
       <section style={{ background: 'var(--navy)', padding: '3rem 0' }}>
