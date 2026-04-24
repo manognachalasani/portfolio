@@ -46,7 +46,6 @@ export default function Hobbies() {
             </div>
             </div>
           </div>
-        </div>
       </section>
 
       {/* Debating */}
