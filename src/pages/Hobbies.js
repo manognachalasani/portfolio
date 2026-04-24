@@ -1,10 +1,5 @@
 import React from 'react';
 
-const anthologies = [
-  'Fragments of Midnight', 'The Cartography of Grief', 'Soft Architectures',
-  'Letters to No One', 'A Grammar of Light', 'Borrowed Skies',
-];
-
 export default function Hobbies() {
   return (
     <main className="page">
@@ -31,13 +26,12 @@ export default function Hobbies() {
             <div>
               <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>
                 I am a published poet and author. Writing has been my longest-running practice —
-                a way to process the world, make sense of complexity, and find beauty in language
-                the same way I find elegance in code.
+                a way to process the world, make sense of complexity, and find beauty in language.
               </p>
               <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem' }}>
                 I've co-authored over 30 poetry anthologies and compiled two original collections.
                 My writing spans introspective verse, narrative poetry, and occasional prose —
-                often exploring themes of identity, technology, and the human condition.
+                often exploring themes of identity, love, and the human condition.
               </p>
               <div className="grid-3" style={{ gridTemplateColumns: 'repeat(2,1fr)', gap: '0.75rem' }}>
                 <div className="stat-box">
@@ -50,20 +44,6 @@ export default function Hobbies() {
                 </div>
               </div>
             </div>
-            <div>
-              <div className="pull-quote">
-                Code and poetry are the same thing — both are about finding the most precise,
-                elegant way to say something true.
-              </div>
-              <h3 style={{ fontFamily: 'Playfair Display, serif', fontSize: '1rem', color: 'var(--navy)', marginTop: '1.5rem', marginBottom: '0.75rem' }}>
-                Sample anthology titles
-              </h3>
-              <div className="tags">
-                {anthologies.map(a => (
-                  <span className="tag gold" key={a} style={{ fontStyle: 'italic' }}>{a}</span>
-                ))}
-                <span className="tag">+ 24 more</span>
-              </div>
             </div>
           </div>
         </div>
@@ -132,10 +112,10 @@ export default function Hobbies() {
             <div>
               <h3 style={{ fontFamily: 'Playfair Display, serif', fontSize: '1.1rem', color: 'var(--navy)', marginBottom: '1rem' }}>Areas of Interest</h3>
               {[
-                { icon: '🧠', label: 'Cognitive Psychology', desc: 'Memory, attention, cognitive load, and decision-making heuristics.' },
-                { icon: '🤝', label: 'Behavioral Economics', desc: 'How humans make (ir)rational choices and what nudges behavior.' },
-                { icon: '📱', label: 'Human-Computer Interaction', desc: 'The psychology of interfaces, usability, and user experience.' },
-                { icon: '📖', label: 'Philosophy of Mind', desc: 'Consciousness, identity, and what it means to be a thinking being.' },
+                {label: 'Cognitive Psychology', desc: 'Memory, attention, cognitive load, and decision-making heuristics.' },
+                {label: 'Behavioral Economics', desc: 'How humans make (ir)rational choices and what nudges behavior.' },
+                {label: 'Human-Computer Interaction', desc: 'The psychology of interfaces, usability, and user experience.' },
+                {label: 'Philosophy of Mind', desc: 'Consciousness, identity, and what it means to be a thinking being.' },
               ].map(a => (
                 <div key={a.label} style={{ display: 'flex', gap: '1rem', marginBottom: '1.25rem' }}>
                   <span style={{ fontSize: '1.5rem', flexShrink: 0 }}>{a.icon}</span>
