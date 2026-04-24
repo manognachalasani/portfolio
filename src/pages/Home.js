@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import profilePhoto from '../assets/profile.jpeg';
 
 const skills = {
   'Programming': ['Java', 'Python', 'C'],
@@ -49,7 +50,7 @@ export default function Home() {
             {/* Right side - Photo */}
             <div style={{ flex: 1, minWidth: '200px', textAlign: 'center' }}>
               <img 
-                src={require('../assets/profile.jpeg')} 
+                src={profilePhoto} 
                 alt="Manogna Chalasani"
                 style={{
                   width: '100%',
