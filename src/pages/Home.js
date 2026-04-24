@@ -49,7 +49,7 @@ export default function Home() {
             {/* Right side - Photo */}
             <div style={{ flex: 1, minWidth: '200px', textAlign: 'center' }}>
               <img 
-                src={require('../assets/profile.jpg')} 
+                src={require('../assets/profile.jpeg')} 
                 alt="Manogna Chalasani"
                 style={{
                   width: '100%',
