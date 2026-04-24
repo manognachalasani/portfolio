@@ -24,21 +24,45 @@ export default function Home() {
       {/* ── Hero ── */}
       <section style={{ background: 'var(--navy)', color: '#fff', padding: '5rem 0 4rem' }}>
         <div className="container">
-          <p className="section-eyebrow" style={{ color: 'var(--gold-light)' }}>Computer Science · Mahindra University</p>
-          <h1 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', color: '#fff', marginBottom: '1rem', lineHeight: 1.15 }}>
-            Manogna<br />
-            <em style={{ color: 'var(--gold-light)', fontStyle: 'italic' }}>Chalasani</em>
-          </h1>
-          <p style={{ color: 'rgba(255,255,255,0.72)', maxWidth: 560, fontSize: '1.05rem', marginBottom: '2rem', lineHeight: 1.75 }}>
-            CS undergraduate with a passion for cloud systems, cybersecurity, and full-stack development.
-            Builder, researcher, poet, and club founder — seeking a Summer Internship in Full-Stack Java
-            or Cybersecurity.
-          </p>
-          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-            <Link to="/projects" className="btn btn-gold">View Projects ↗</Link>
-            <a href="mailto:manognachalasani@gmail.com" className="btn btn-outline" style={{ borderColor: 'rgba(255,255,255,0.4)', color: '#fff' }}>
-              Get in Touch
-            </a>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem', alignItems: 'center', justifyContent: 'space-between' }}>
+            
+            {/* Left side - Text content */}
+            <div style={{ flex: 2, minWidth: '280px' }}>
+              <p className="section-eyebrow" style={{ color: 'var(--gold-light)' }}>Computer Science · Mahindra University</p>
+              <h1 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', color: '#fff', marginBottom: '1rem', lineHeight: 1.15 }}>
+                Manogna<br />
+                <em style={{ color: 'var(--gold-light)', fontStyle: 'italic' }}>Chalasani</em>
+              </h1>
+              <p style={{ color: 'rgba(255,255,255,0.72)', maxWidth: 560, fontSize: '1.05rem', marginBottom: '2rem', lineHeight: 1.75 }}>
+                CS undergraduate with a passion for cloud systems, cybersecurity, and full-stack development.
+                Builder, researcher, poet, and club founder — seeking a Summer Internship in Full-Stack Java
+                or Cybersecurity.
+              </p>
+              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+                <Link to="/projects" className="btn btn-gold">View Projects ↗</Link>
+                <a href="mailto:manognachalasani@gmail.com" className="btn btn-outline" style={{ borderColor: 'rgba(255,255,255,0.4)', color: '#fff' }}>
+                  Get in Touch
+                </a>
+              </div>
+            </div>
+            
+            {/* Right side - Photo */}
+            <div style={{ flex: 1, minWidth: '200px', textAlign: 'center' }}>
+              <img 
+                src={require('../assets/profile.jpg')} 
+                alt="Manogna Chalasani"
+                style={{
+                  width: '100%',
+                  maxWidth: '280px',
+                  borderRadius: '50%',
+                  border: '4px solid var(--gold-light)',
+                  boxShadow: '0 10px 30px rgba(0,0,0,0.3)',
+                  objectFit: 'cover',
+                  aspectRatio: '1/1'
+                }}
+              />
+            </div>
+            
           </div>
         </div>
       </section>
