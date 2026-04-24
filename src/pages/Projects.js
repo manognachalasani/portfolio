@@ -103,6 +103,34 @@ export default function Projects() {
         </div>
       </section>
 
+    {/* Work Experience */}
+          <section style={{ background: 'var(--cream-dark)', padding: '4rem 0' }}>
+            <div className="container">
+              <p className="section-eyebrow">Work Experience</p>
+              <h2 className="section-title">Internship <em>Experience</em></h2>
+              <hr className="section-rule" />
+              <div className="card" style={{ maxWidth: 720 }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.75rem' }}>
+                  <div>
+                    <h3 className="card-title">Cloud Computing Intern</h3>
+                    <div className="card-sub" style={{ marginBottom: 0 }}>SmartEd Innovations</div>
+                  </div>
+                  <span style={{ fontSize: '0.82rem', color: 'var(--gold)', fontWeight: 500 }}>Jun 2025 – Sept 2025</span>
+                </div>
+                <ul className="bullet-list">
+                  <li>Built an Azure-based image analysis platform using Azure Computer Vision APIs and virtual machines for scalable deployment.</li>
+                  <li>Implemented secure API endpoints and integrated cloud storage for processing and managing image datasets.</li>
+                  <li>Configured and deployed Azure Virtual Machines and monitored performance metrics for cloud infrastructure.</li>
+                </ul>
+                <div className="tags" style={{ marginTop: '1rem' }}>
+                  {['Azure', 'Azure Computer Vision', 'Azure VMs', 'REST APIs', 'Cloud Storage'].map(t => (
+                    <span className="tag" key={t}>{t}</span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </section>
+
       {/* Hackathons */}
       <section style={{ background: 'var(--cream-dark)', padding: '4rem 0' }}>
         <div className="container">
