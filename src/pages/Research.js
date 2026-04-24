@@ -8,12 +8,12 @@ const coursework = [
 ];
 
 const certs = [
-  { name: 'Introduction to Cybersecurity', issuer: 'Cisco', status: 'Completed', icon: '🛡️' },
-  { name: 'SOC Analyst', issuer: 'U.S. Council', status: 'Completed', icon: '🔍' },
-  { name: 'Cybersecurity Professional (Ethical Hacker)', issuer: 'U.S. Council', status: 'Completed', icon: '⚔️' },
-  { name: 'Java Programming I', issuer: 'University of Helsinki', status: 'Completed', icon: '☕' },
-  { name: 'Cloud Computing with Azure & AWS', issuer: 'Online', status: 'In Progress', icon: '☁️' },
-  { name: 'Research Paper Presentation', issuer: 'International Scientific Research Congress, Istanbul', status: 'Completed', icon: '🎓' },
+  { name: 'Introduction to Cybersecurity', issuer: 'Cisco', status: 'Completed'},
+  { name: 'SOC Analyst', issuer: 'U.S. Council', status: 'Completed'},
+  { name: 'Cybersecurity Professional (Ethical Hacker)', issuer: 'U.S. Council', status: 'Completed'},
+  { name: 'Java Programming I', issuer: 'University of Helsinki', status: 'Completed'},
+  { name: 'Cloud Computing with Azure & AWS', issuer: 'Online', status: 'Completed'},
+  { name: 'Research Paper Presentation', issuer: 'International Scientific Research Congress, Istanbul', status: 'Completed'},
 ];
 
 export default function Research() {
@@ -23,11 +23,11 @@ export default function Research() {
         <div className="container">
           <p className="section-eyebrow" style={{ color: 'var(--gold-light)' }}>Academic & Research</p>
           <h1 className="section-title" style={{ color: '#fff' }}>
-            Research & <em style={{ color: 'var(--gold-light)' }}>Academics</em>
+            Academics & <em style={{ color: 'var(--gold-light)' }}>Research</em>
           </h1>
           <p style={{ color: 'rgba(255,255,255,0.65)', maxWidth: 560 }}>
             From published research papers to ongoing certifications — a record of intellectual
-            curiosity across computer science, behavioral sciences, and beyond.
+            curiosity and experiences across computer science, behavioral sciences, and beyond.
           </p>
         </div>
       </section>
@@ -136,10 +136,10 @@ export default function Research() {
           <hr className="section-rule" />
           <div className="grid-2">
             {[
-              { icon: '🏅', title: 'Award of Merit Scholarship', detail: 'Awarded three consecutive years: 2023–24, 2024–25, 2025–26 at Mahindra University for academic excellence.' },
-              { icon: '🎓', title: 'CGPA 8.5 / 10', detail: 'Consistent academic performance throughout the B.S. Computer Science program.' },
-              { icon: '🌍', title: 'International Research Congress', detail: 'Presented research at the International Scientific Research Congress 2024 in Istanbul, Turkey.' },
-              { icon: '🏆', title: 'IIT Madras Debate — Top 20', detail: 'Ranked in the Top 20 among 300+ participants at the IIT Madras British Parliamentary Debate 2025.' },
+              { title: 'Award of Merit Scholarship', detail: 'Awarded three consecutive years: 2023–24, 2024–25, 2025–26 at Mahindra University for academic excellence.' },
+              { title: 'CGPA 8.5 / 10', detail: 'Consistent academic performance throughout the B.S. Computer Science program.' },
+              { title: 'International Research Congress', detail: 'Presented research at the International Scientific Research Congress 2024 in Istanbul, Turkey.' },
+              { title: 'IIT Madras Debate — Top 20', detail: 'Ranked in the Top 20 among 300+ participants at the IIT Madras British Parliamentary Debate 2025.' },
             ].map(a => (
               <div className="card" key={a.title}>
                 <div style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>{a.icon}</div>
