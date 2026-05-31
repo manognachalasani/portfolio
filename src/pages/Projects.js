@@ -80,6 +80,32 @@ const projects = [
       ],
   },
     {
+    "title": "Real Estate Listing Platform",
+    "date": "May 2026",
+    "tags": ["MERN", "React", "Node.js", "MongoDB", "Leaflet.js", "JWT", "Cloudinary"],
+    "category": "Full-Stack Web Development",
+    "github": "https://github.com/manognachalasani/realestate_listing",
+    "bullets": [
+      "Built a full-stack property listing platform using MERN stack with JWT-based authentication for agent and buyer roles.",
+      "Implemented interactive property search with filters (location, price, type, amenities) and results displayed on Leaflet.js maps.",
+      "Integrated Cloudinary for image uploads, Nodemailer for enquiry notifications, and a mortgage calculator for buyers.",
+      "Developed a separate JSP + iText module to generate print-ready PDF brochures for individual property listings."
+    ]
+  },
+  {
+    "title": "Predicting Human Annotator Disagreement",
+    "date": "May 2026",
+    "tags": ["Deep Learning", "ResNet", "PyTorch", "CIFAR-10", "Uncertainty", "Grad-CAM"],
+    "category": "Deep Learning / Computer Vision",
+    "github": "https://github.com/yashikagupta-ai/Predicting-Human-Annotator-Disagreement",
+    "bullets": [
+      "Trained ResNet-18 models to predict full distribution of human labels on CIFAR-10H, modeling annotator disagreement instead of a single hard label.",
+      "Compared KL-divergence, JSD, and a custom entropy-penalty loss functions, achieving 0.1711 KL divergence and 0.4619 Pearson correlation on soft-label prediction.",
+      "Used two-phase training (hard labels pre-training → soft label fine-tuning) and evaluated using entropy correlation and Precision@K for ambiguous image identification.",
+      "Applied Grad-CAM for explainability, analyzing model focus on class boundaries (e.g., cat vs. dog) and tested robustness on corrupted images."
+    ]
+  },
+    {
       title: 'Hotel Management System',
       date: 'Nov 2025',
       tags: ['Express.js', 'TypeScript', 'JWT', 'PostgreSQL', 'Nodemailer', 'REST API'],
