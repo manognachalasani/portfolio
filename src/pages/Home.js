@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import profilePhoto from '../assets/profile.jpeg';
+import profilePhoto from '../assets/profile.png';
 
 const skills = {
   'Programming': ['Java', 'Python', 'C'],
