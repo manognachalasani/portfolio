@@ -88,7 +88,7 @@ export default function Home() {
           <div className="grid-2" style={{ gap: '2.5rem', alignItems: 'start' }}>
             <div>
               <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>
-                I'm a third-year B.S. Computer Science student at Mahindra University, Hyderabad.
+                I'm a third-year B.S. Computer Science student at Mahindra University, Nice, France.
               </p>
               <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>
                 My technical interests span across cybersecurity, AI/ML, and cloud-native systems 
@@ -101,10 +101,9 @@ export default function Home() {
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
                 {[
-                  ['📍', 'Hyderabad, India'],
+                  ['📍', 'Nice, France'],
                   ['📧', 'manognachalasani@gmail.com'],
-                  ['📧', 'se23ucse046@mahindrauniversity.edu.in'],
-                  ['📞', '+91 9100982104'],
+                  ['📞', '+33 751137673'],
                   [ 'linkedin.com/in/manogna-ch'],
                   ['github.com/manognachalasani'],
                 ].map(([icon, val]) => (
@@ -121,6 +120,7 @@ export default function Home() {
               </h3>
               <div className="timeline">
                 {[
+                  { date: '2026 – 2027', title: 'Higher National Diploma in Data Science & Artificial Intelligence', org: 'Centrale Méditerranée', note: 'In Progress'},
                   { date: '2023 – 2027', title: 'B.S. Computer Science', org: 'Mahindra University, Hyderabad', note: 'CGPA: 8.5 / 10 · Merit Scholarship ×3' },
                   { date: '2021 – 2023', title: 'Intermediate — MPC', org: 'Saraswathi Educational Society', note: '96%' },
                   { date: '2020 – 2021', title: 'Secondary School Certificate', org: 'The Creek Planet School', note: '95%' },
